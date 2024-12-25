@@ -135,7 +135,7 @@ export default function Home() {
           <figure className={styles.slotWrapper}>
             <Image
               className={styles.slot}
-              src="/win3/background.png"
+              src="/win3/Background.png"
               alt="Mint Slot"
               width={1920}
               height={1200}
