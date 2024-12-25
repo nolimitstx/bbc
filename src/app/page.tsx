@@ -51,7 +51,7 @@ export default function Home() {
                   </figure>
                 </div>
                 <div className={styles.mintSoonContainer}>
-                    <div className={styles.mintSoon}>MINT SOON</div>
+                  <div className={styles.mintSoon}>MINT SOON</div>
                   <figure className={styles.mintAccentContainer}>
                     <Image
                       width={95}
@@ -80,9 +80,9 @@ export default function Home() {
                 height={800}
               />
             </figure>
-                      <div className={styles.tickerContainer}>
-            <div className={styles.tickerSlide}></div>
-          </div>
+            <div className={styles.tickerContainer}>
+              <div className={styles.tickerSlide}></div>
+            </div>
           </div>
         </div>
         <div>
@@ -121,12 +121,12 @@ export default function Home() {
                 </figure>
               </div>
               <div className={styles.descriptionContainer}>
-                <p className={styles.description}>BBC BABIES ARE 1 OF 1 DEGEN BABIES on Solana</p>
-                <p className={styles.description}>Baby Billionaires Club is a collection of 6,969 hand-drawn babies</p>
-                <p className={styles.description}>inspired by streetwear, hip hop, & generations of cartoons.</p>
-                <p className={styles.description}>They are the entry into the babyverse existing at the intersection of DeFi and AI</p>
-                <p className={styles.description}>Members will get access to crypto education videos, trading analytics, apparel</p>
-                <p className={styles.description}>and much more as the babyverse grows.</p>
+                <p className={styles.description}><strong>BBC BABIES</strong> are 1-of-1 degens stomping around on Solana.</p>
+                <p className={styles.description}>We’ve unleashed <strong>6,969 hand-drawn babies</strong>—inspired by streetwear, hip-hop, and all the classic cartoon mischief you grew up on.</p>
+                <p className={styles.description}>Welcome to the <strong>Baby Billionaires Club</strong>, where <strong>DeFi</strong> collides with <strong>AI</strong>, and the memes never sleep.</p>
+                <p className={styles.description}>Snag a BBC BABY and dive headfirst into the <strong>Babyverse</strong>, scoring exclusive crypto education, trading analytics, and a front-row seat to the wildest meme-fueled chaos in Web3.</p>
+                <p className={styles.description}>Brace yourself, degens—<strong>the baby revolution is here</strong>.</p>
+
               </div>
             </div>
           </div>
