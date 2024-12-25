@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Luckiest_Guy } from "next/font/google";
 import "./globals.css";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 
 const luckiestGuy = Luckiest_Guy({
