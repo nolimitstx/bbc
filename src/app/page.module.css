@@ -1,3 +1,8 @@
+/* =========================================
+   =            BASE (MOBILE)             =
+   ========================================= */
+
+/* Variables and color scheme */
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -6,16 +11,291 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex; /* Changed from grid for mobile-first simplicity */
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: stretch;
   min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-luckiest-guy);
+  /* padding-top: 1.25rem; */
+  padding-top: 0;
 }
 
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 1.25rem; */
+}
+
+/* Hero Wrapper (Mobile) */
+.heroWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%; /* You can tweak this for mobile */
+  overflow: hidden;
+  background: url("/win1/Paper-Hero-1.png") center center / cover no-repeat;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Let it fill .heroWrapper’s height */
+}
+
+/* Title Container (Mobile) */
+.titleContainer {
+  /* position: relative; */
+  /* overflow: hidden; */
+  align-self: center;
+  width: 65%;
+  display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 40%;
+  /* If you want it square on mobile, you could do aspect-ratio: 1; 
+     but be sure it doesn’t break smaller screens. */
+}
+
+.win1figure1 {
+  align-self: center;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+.heroTitle {
+  width: 100%;
+  height: auto;
+}
+
+/* Title SubContainer (Mobile) */
+.titleSubContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.win1TextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding-right: 12%;
+  padding-bottom: 10%; */
+}
+
+.win1Text {
+  position: relative;
+  width: 70%;
+  height: auto;
+}
+
+.mintSoonContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  width: 100%;
+  padding-left: 0; /* reset for mobile */
+}
+
+.mintSoon {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  background-color: #f47a20;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 0 #000;
+  align-self: center;
+}
+
+.mintAccentContainer {
+  position: relative;
+  width: 16%;
+  aspect-ratio: 1;
+  height: auto;
+}
+
+.mintAccent {
+  position: absolute;
+  top: -77%;
+  left: -20%;
+  width: 116%;
+  height: auto;
+}
+
+.foregroundContainer {
+  position: relative;
+  width: 87%;
+  aspect-ratio: 1;
+  height: auto;
+  align-self: flex-end;
+  overflow: hidden;
+}
+
+.foregroundAccent {
+  position: absolute;
+  left: 0;
+  top: 4%;
+  width: auto;
+  height: auto;
+}
+
+.foreground {
+  position: absolute;
+  width: 89%;
+  height: auto;
+  top: 12%;
+}
+
+/* Ticker Container (Mobile) */
+.tickerContainer {
+  width: 100%;
+  height: 7%; /* bigger for mobile so text is visible */
+  border: 5px solid black;
+  background-color: #FB6A14;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.tickerSlide {
+  width: 100%;
+  height: 100%;
+  min-height: 42px;
+  background: url("/win1/tickerImage.png") repeat-x center;
+  animation: scrollBg 10s linear infinite;
+}
+
+@keyframes scrollBg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    /* shift by ~500px for a clean loop */
+    background-position: -500px 0;
+  }
+}
+
+/* Slot / Mint Section (Mobile) */
+.mintWrapper {
+  width: 100%;
+}
+
+.slotWrapper {
+  width: 100%;
+  height: auto;
+}
+
+.slot {
+  width: 100%;
+  height: 100%;
+}
+
+/* Win2 Section (Mobile) */
+.win2Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
+
+.win2figure1 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.win2Image1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.win2Col2Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75rem;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.textHeader {
+  font-size: 24px;
+  text-shadow: 3px 3px black;
+  margin-bottom: 0.5rem;
+}
+
+.win2figure2 {
+  position: relative;
+  width: 45%;
+  aspect-ratio: 1;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem; /* base for mobile */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* =========================================
+   =        DARK MODE OVERRIDES           =
+   ========================================= */
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
@@ -27,142 +307,231 @@
   }
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+@media (min-width: 640px) {
+  .foregroundContainer {
+    width: 50%;
+    align-self: center;
+    margin-left: 8%;
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  .win1Text {
+    width: 100%;
   }
 
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+  .mintSoonContainer {
+    padding-top: 10%;
+  }
+
+  .mintSoon {
+    margin-left: 8%;
+    padding: 0.5rem 0.75rem;
+  }
+  .mintAccentContainer {
+    width: 10%;
+  }
+
+  .win2figure1 {
+    width: 50%;
+  }
+
+  .question {
+    margin: 0;
+  }
+  .win2figure2 {
+    width: 17%;
   }
 }
 
-@media (max-width: 600px) {
+/* =========================================
+   =           TABLET (>= 768px)          =
+   ========================================= */
+@media (min-width: 768px) {
+  .slotWrapper {
+    aspect-ratio: unset;
+    width: 100%;
+  }
+  .slot {
+    width: 100%;
+    height: 100%;
+  }
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
+    display: grid;
+    grid-template-rows: 40px 1fr 20px;
+    min-height: 100vh; /* or 100svh, but 100vh often works well on tablets */
     align-items: center;
+    justify-items: center;
   }
 
-  .main ol {
-    text-align: center;
+  .heroWrapper {
+    height: 100%;
   }
 
-  .ctas {
+  .heroContent {
     flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
   }
 
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
+  .titleContainer {
+    width: 58%;
+    aspect-ratio: 1;
+    align-self: flex-start;
   }
 
-  a.secondary {
-    min-width: auto;
+  .titleSubContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  .win1figure1 {
+    width: 80%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-top: 0%;
+  }
+
+  .win1TextContainer {
+    padding-right: 0;
+    padding-bottom: 0;
+    align-items: flex-start;
+  }
+
+  .win1Text {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .mintSoonContainer {
+    padding: 0;
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .mintAccentContainer {
+    width: auto;
+    aspect-ratio: initial;
+  }
+
+  .mintAccent {
+    width: 95px;
+    height: 101px;
+    position: absolute;
+    top: -110%;
+    left: 41%;
+  }
+
+  .foregroundContainer {
+    width: 35%;
+    height: auto;
+    align-self: flex-end;
+    overflow: unset;
+    top: 38%;
+    position: absolute;
+  }
+
+  .foregroundAccent {
+    left: 13%;
+    width: auto;
+  }
+
+  .tickerContainer {
+    height: 26%;
+    overflow: unset;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+
+  .question {
+    font-size: 2rem;
+  }
+
+  .textHeader {
+    font-size: 1.75rem;
+    text-shadow: 5px 5px black;
+  }
+
+  .win2Col2Container {
+    padding-top: 5%;
+  }
+
+  .descriptionContainer {
+    padding-bottom: 0%;
+  }
+
+  .win2Container {
+    flex-direction: row;
+  }
+
+  .win2figure1 {
+    margin: 0;
+    width: 90%;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+/* =========================================
+   =       DESKTOP (>= 1024px)            =
+   ========================================= */
+@media (min-width: 1024px) {
+  .page {
+    /* Possibly keep the same structure or adjust spacing/padding */
+  }
+
+  .description {
+    font-size: 1.35rem;
+  }
+
+  .textHeader {
+    font-size: 2.5rem;
+  }
+  
+  .question {
+    font-size: 2.25rem;
+  }
+}
+
+/* =========================================
+   =    LARGE DESKTOP (>= 1920px)         =
+   ========================================= */
+@media (min-width: 1280px) {
+  .textHeader {
+    font-size: 4rem;
+    text-shadow: 8px 8px black;
+  }
+
+  .description {
+    font-size: 1.75rem;
+  }
+
+  .win1Text {
+    width: 150%;
+  }
+
+  .mintSoon {
+    font-size: 1.75rem;
+  }
+}
+
+/* =========================================
+   =     XXL DESKTOP (>= 2400px)          =
+   ========================================= */
+@media (min-width: 1536px) {
+  .textHeader {
+    font-size: 5rem;
+    text-shadow: 10px 10px black;
+  }
+
+  .description {
+    font-size: 2.5rem;
+  }
+
+  .win1Text {
+    width: 200%;
+  }
+
+  .mintSoon {
+    padding: 20px;
+    font-size: 2.25rem;
   }
 }

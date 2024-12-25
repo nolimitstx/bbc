@@ -1,0 +1,153 @@
+.container {
+  padding-bottom: 1.125rem;
+  display: flex;
+  align-items: flex-end;
+  z-index: 999;
+  padding-top: 1.125rem;
+  /* padding-top: 2.5rem; */
+  width: 100%;
+  justify-content: flex-end;
+  background-color: #f47a20;
+}
+
+.socials {
+  grid-column-gap: .875rem;
+  grid-row-gap: .875rem;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-left: 1.5625rem; */
+  display: flex;
+  width: 100%;
+  align-self: center;
+  height: 100%;
+  /* margin-left: 1.5625rem; */
+  /* width: 25%; */
+}
+
+.socialLinkContainer {
+  text-decoration: none;
+  position: relative;
+}
+
+
+.socialLink {
+  z-index: 1;
+  background-color: #FB6A14;
+  border-radius: .25rem;
+  justify-content: center;
+  align-items: center;
+  /* width: 3rem;
+  height: 3rem; */
+  width: 2.125rem;
+  height: 2.125rem;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+}
+
+.socialBg {
+  border-radius: .25rem;
+  inset: .25rem -.25rem -.25rem .25rem;
+  z-index: 0;
+  background-color: #000;
+  position: absolute;
+}
+
+.socialImg {
+  /* height: 1.25rem; */
+  height: 1rem;
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+  border: 0;
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .socials {
+    margin-top: 1.5rem;
+    grid-column-gap: .875rem;
+    grid-row-gap: .875rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    width: 25%;
+    align-self: center;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-bottom: 1.25rem;
+    display: flex;
+    align-items: flex-end;
+    z-index: 999;
+    padding-top: 1.25rem;
+    /* padding-top: 2.5rem; */
+    width: 100%;
+    justify-content: flex-end;
+    background-color: #f47a20;
+  }
+  
+  .socials {
+    grid-column-gap: .875rem;
+    grid-row-gap: .875rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1.5625rem;
+    display: flex;
+    width: 25%;
+    align-self: flex-end;
+    height: 100%;
+  }
+  
+  .socialLinkContainer {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  
+  .socialLink {
+    z-index: 1;
+    background-color: #FB6A14;
+    border-radius: .25rem;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    transition: all .3s;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .socialBg {
+    border-radius: .25rem;
+    inset: .25rem -.25rem -.25rem .25rem;
+    z-index: 0;
+    background-color: #000;
+    position: absolute;
+  }
+  
+  .socialImg {
+    height: 1.25rem;
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    border: 0;
+  }
+  
+}
+@media (min-width: 1536px) {
+}
