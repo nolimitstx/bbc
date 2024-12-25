@@ -7,7 +7,8 @@ import theme from '../theme';
 
 const luckiestGuy = Luckiest_Guy({
   variable: "--font-luckiest-guy",
-  weight: "400"
+  weight: "400",
+  preload: false,
 });
 
 export const metadata: Metadata = {
