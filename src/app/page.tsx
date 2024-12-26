@@ -125,7 +125,7 @@ export default function Home() {
               </div>
               <div className={styles.descriptionContainer}>
                 <p className={styles.description}>BBC BABIES are 1-of-1 degens stomping around on Solana.</p>
-                <p className={styles.description}>We’ve unleashed 6,969 hand-drawn babies—inspired by streetwear, hip-hop, and all the classic cartoon mischief you grew up on.</p>
+                <p className={styles.description}>We’re unleashing 6,969 hand-drawn babies—inspired by streetwear, hip-hop, and all the classic cartoon mischief you grew up on.</p>
                 <p className={styles.description}>Welcome to the Baby Billionaires Club, where DeFi collides with AI, and the memes never sleep.</p>
                 <p className={styles.description}>Snag a BBC BABY and dive headfirst into the Babyverse, scoring exclusive crypto education, trading analytics, and a front-row seat to the wildest meme-fueled chaos in Web3.</p>
                 <p className={styles.description}>Brace yourself, degens—the baby revolution is here.</p>
