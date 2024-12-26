@@ -11,7 +11,8 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: flex; /* Changed from grid for mobile-first simplicity */
+  display: flex;
+  /* Changed from grid for mobile-first simplicity */
   flex-direction: column;
   align-items: center;
   justify-content: stretch;
@@ -33,7 +34,8 @@
 .heroWrapper {
   position: relative;
   width: 100%;
-  height: 100%; /* You can tweak this for mobile */
+  height: 100%;
+  /* You can tweak this for mobile */
   overflow: hidden;
   background: url("/win1/Paper-Hero-1.png") center center / cover no-repeat;
 }
@@ -58,7 +60,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%; /* Let it fill .heroWrapper’s height */
+  height: 100%;
+  /* Let it fill .heroWrapper’s height */
 }
 
 /* Title Container (Mobile) */
@@ -66,22 +69,20 @@
   /* position: relative; */
   /* overflow: hidden; */
   align-self: center;
-  width: 65%;
+  width: 100%;
   display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 40%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40%;
   /* If you want it square on mobile, you could do aspect-ratio: 1; 
      but be sure it doesn’t break smaller screens. */
 }
 
 .win1figure1 {
   align-self: center;
-  width: 100%;
+  width: 95%;
   height: auto;
   padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 5%;
 }
 
 .heroTitle {
@@ -92,7 +93,6 @@
 /* Title SubContainer (Mobile) */
 .titleSubContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -101,14 +101,13 @@
 .win1TextContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* padding-right: 12%;
-  padding-bottom: 10%; */
+  align-items: center;
+  padding-left: 4rem;
 }
 
 .win1Text {
   position: relative;
-  width: 70%;
+  width: 165%;
   height: auto;
 }
 
@@ -116,9 +115,8 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  position: relative;
   width: 100%;
-  padding-left: 0; /* reset for mobile */
+  padding-left: 6rem;
 }
 
 .mintSoon {
@@ -159,7 +157,7 @@
 
 .foregroundAccent {
   position: absolute;
-  left: 0;
+  left: 39px;
   top: 4%;
   width: auto;
   height: auto;
@@ -175,7 +173,8 @@
 /* Ticker Container (Mobile) */
 .tickerContainer {
   width: 100%;
-  height: 7%; /* bigger for mobile so text is visible */
+  height: 7%;
+  /* bigger for mobile so text is visible */
   border: 5px solid black;
   background-color: #FB6A14;
   overflow: hidden;
@@ -194,25 +193,11 @@
   0% {
     background-position: 0 0;
   }
+
   100% {
     /* shift by ~500px for a clean loop */
     background-position: -500px 0;
   }
-}
-
-/* Slot / Mint Section (Mobile) */
-.mintWrapper {
-  width: 100%;
-}
-
-.slotWrapper {
-  width: 100%;
-  height: auto;
-}
-
-.slot {
-  width: 100%;
-  height: 100%;
 }
 
 /* Win2 Section (Mobile) */
@@ -231,7 +216,6 @@
   width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
-  margin-bottom: 1rem;
 }
 
 .win2Image1 {
@@ -251,31 +235,43 @@
 
 .question {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
   font-size: 1.75rem;
   align-items: center;
   text-align: center;
-  margin-bottom: 1rem;
+  justify-content: center;
 }
 
 .textHeader {
   font-size: 24px;
   text-shadow: 3px 3px black;
   margin-bottom: 0.5rem;
+  padding-right: 0.75rem;
 }
 
 .win2figure2 {
   position: relative;
-  width: 45%;
+  width: 30%;
   aspect-ratio: 1;
   height: auto;
-  margin-bottom: 1rem;
+}
+
+.win2Accent {
+  color: transparent;
+  top: 2%;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  left: 4%;
 }
 
 .description {
-  font-size: 1rem; /* base for mobile */
+  font-size: 1rem;
+  /* base for mobile */
   text-align: center;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .questionContainer {
@@ -291,6 +287,21 @@
   overflow: auto;
   text-align: center;
   padding-bottom: 5%;
+}
+
+/* Slot / Mint Section (Mobile) */
+.mintWrapper {
+  width: 100%;
+}
+
+.slotWrapper {
+  width: 103%;
+  height: auto;
+}
+
+.slot {
+  width: 100%;
+  height: 100%;
 }
 
 /* =========================================
@@ -326,6 +337,7 @@
     margin-left: 8%;
     padding: 0.5rem 0.75rem;
   }
+
   .mintAccentContainer {
     width: 10%;
   }
@@ -337,8 +349,23 @@
   .question {
     margin: 0;
   }
+
   .win2figure2 {
     width: 17%;
+  }
+}
+
+@media (min-width: 690px) {
+  .mintSoonContainer {
+    padding-top: 5%;
+  }
+
+  .win1TextContainer {
+    padding-left: 10rem;
+  }
+
+  .win1Text {
+    width: 165%;
   }
 }
 
@@ -350,14 +377,17 @@
     aspect-ratio: unset;
     width: 100%;
   }
+
   .slot {
     width: 100%;
     height: 100%;
   }
+
   .page {
     display: grid;
     grid-template-rows: 40px 1fr 20px;
-    min-height: 100vh; /* or 100svh, but 100vh often works well on tablets */
+    min-height: 100vh;
+    /* or 100svh, but 100vh often works well on tablets */
     align-items: center;
     justify-items: center;
   }
@@ -384,9 +414,9 @@
   }
 
   .win1figure1 {
-    width: 80%;
+    width: 110%;
     padding-bottom: 2%;
-    padding-left: 5%;
+    padding-left: 10%;
     padding-top: 0%;
   }
 
@@ -394,6 +424,7 @@
     padding-right: 0;
     padding-bottom: 0;
     align-items: flex-start;
+    padding-left: 4rem;
   }
 
   .win1Text {
@@ -413,19 +444,24 @@
   }
 
   .mintAccent {
-    width: 95px;
-    height: 101px;
+    width: auto;
+    height: 55px;
     position: absolute;
     top: -110%;
-    left: 41%;
+  }
+
+  .mintSoon {
+    margin-left: 0;
   }
 
   .foregroundContainer {
-    width: 35%;
+    margin-left: 0;
+    width: 47%;
+    top: 17%;
+    left: 57%;
     height: auto;
     align-self: flex-end;
     overflow: unset;
-    top: 38%;
     position: absolute;
   }
 
@@ -466,7 +502,21 @@
 
   .win2figure1 {
     margin: 0;
-    width: 90%;
+    width: 200%;
+  }
+}
+
+@media (min-width: 820px) {
+  .mintSoon {
+    font-size: 24px;
+  }
+
+  .mintAccent {
+    height: 71px;
+  }
+
+  .foregroundAccent {
+    width: 15%;
   }
 }
 
@@ -485,7 +535,7 @@
   .textHeader {
     font-size: 2.5rem;
   }
-  
+
   .question {
     font-size: 2.25rem;
   }
@@ -496,8 +546,8 @@
    ========================================= */
 @media (min-width: 1280px) {
   .textHeader {
-    font-size: 4rem;
-    text-shadow: 8px 8px black;
+    font-size: 3rem;
+    text-shadow: 7px 7px black;
   }
 
   .description {
@@ -527,11 +577,15 @@
   }
 
   .win1Text {
-    width: 200%;
+    width: 275%;
+  }
+
+  .mintAccent {
+    height: 120px;
   }
 
   .mintSoon {
     padding: 20px;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 }

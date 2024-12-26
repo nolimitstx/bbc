@@ -99,20 +99,23 @@ export default function Home() {
             <div className={styles.questionContainer}>
               <div className={styles.win2Col2Container}>
                 <div className={styles.question}>
-                  <header className={styles.textHeader}>WHAT THE</header>
-                  <header className={styles.textHeader}>F*CK ARE BBC</header>
-                  <header className={styles.textHeader}>BABIES?</header>
+                  <div className={styles.textHeader}>WHAT</div>
+                  <div className={styles.textHeader}>WHAT</div>
+                  <div className={styles.textHeader}>F*CK</div>
+                  <div className={styles.textHeader}>ARE</div>
+                  <div className={styles.textHeader}>BBC</div>
+                  <div className={styles.textHeader}>BABIES?</div>
                 </div>
                 <figure className={styles.win2figure2}>
                   <Image
-                    style={{ top: '7%', position: 'absolute', width: '36%', height: 'auto', left: '-6%' }}
+                    className={styles.win2Accent}
                     alt="stars"
                     width={95}
                     height={78}
                     src="/win2/stars.png"
                   />
                   <Image
-                    style={{ position: 'absolute', width: '95%', height: 'auto', top: '18%' }}
+                    style={{ position: 'absolute', width: '95%', height: 'auto' }}
                     alt="bag"
                     width={260}
                     height={260}
@@ -121,11 +124,11 @@ export default function Home() {
                 </figure>
               </div>
               <div className={styles.descriptionContainer}>
-                <p className={styles.description}><strong>BBC BABIES</strong> are 1-of-1 degens stomping around on Solana.</p>
-                <p className={styles.description}>We’ve unleashed <strong>6,969 hand-drawn babies</strong>—inspired by streetwear, hip-hop, and all the classic cartoon mischief you grew up on.</p>
-                <p className={styles.description}>Welcome to the <strong>Baby Billionaires Club</strong>, where <strong>DeFi</strong> collides with <strong>AI</strong>, and the memes never sleep.</p>
-                <p className={styles.description}>Snag a BBC BABY and dive headfirst into the <strong>Babyverse</strong>, scoring exclusive crypto education, trading analytics, and a front-row seat to the wildest meme-fueled chaos in Web3.</p>
-                <p className={styles.description}>Brace yourself, degens—<strong>the baby revolution is here</strong>.</p>
+                <p className={styles.description}>BBC BABIES are 1-of-1 degens stomping around on Solana.</p>
+                <p className={styles.description}>We’ve unleashed 6,969 hand-drawn babies—inspired by streetwear, hip-hop, and all the classic cartoon mischief you grew up on.</p>
+                <p className={styles.description}>Welcome to the Baby Billionaires Club, where DeFi collides with AI, and the memes never sleep.</p>
+                <p className={styles.description}>Snag a BBC BABY and dive headfirst into the Babyverse, scoring exclusive crypto education, trading analytics, and a front-row seat to the wildest meme-fueled chaos in Web3.</p>
+                <p className={styles.description}>Brace yourself, degens—the baby revolution is here.</p>
 
               </div>
             </div>
