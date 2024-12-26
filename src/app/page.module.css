@@ -325,8 +325,12 @@
     margin-left: 8%;
   }
 
+  .win1TextContainer {
+    padding-left: 10rem;
+  }
+
   .win1Text {
-    width: 100%;
+    width: 165%;
   }
 
   .mintSoonContainer {
@@ -360,13 +364,6 @@
     padding-top: 5%;
   }
 
-  .win1TextContainer {
-    padding-left: 10rem;
-  }
-
-  .win1Text {
-    width: 165%;
-  }
 }
 
 /* =========================================
