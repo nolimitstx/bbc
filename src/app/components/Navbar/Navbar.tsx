@@ -21,7 +21,7 @@ export default function NavBar() {
           <div className={styles.socialBg}></div>
         </div>
         <div className={styles.socialLinkContainer} style={{transform: 'rotate(-6deg'}}>
-          <a href='https://x.com/babybillcoin?s=11' target="_blank" rel="noreferrer" className={styles.socialLink}>
+          <a href='https://x.com/bb_clubnft?s=11' target="_blank" rel="noreferrer" className={styles.socialLink}>
             <img src={twitter} alt="twitter" loading="lazy" className={styles.socialImg} />
           </a>
           <div className={styles.socialBg}></div>
