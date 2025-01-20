@@ -16,7 +16,7 @@ export default function RoadMap() {
     <div className="section roadmap XXsnipcss_extracted_selector_selectionXX snipcss0-0-0-1 tether-element-attached-top tether-element-attached-center tether-target-attached-top tether-target-attached-center">
       <div className="grid big snipcss0-1-1-2">
       {isVerticalDesign && <div className="roadmap-head snipcss0-2-2-3">
-           <div className={styles.textHeader}>Road Map</div>
+           <div className={styles.textHeader}>Roadmap</div>
         </div>}
 
         <div className="roadmap-grid snipcss0-2-2-5">
