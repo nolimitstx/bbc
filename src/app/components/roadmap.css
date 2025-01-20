@@ -4401,6 +4401,7 @@ textarea.w-input, textarea.w-select {
   .r_head.is-2 {
     padding-bottom: 4.5rem;
     inset: auto -34% 13% auto;
+    padding-left: 2rem;
   }
 
   .r_number.is-3 {
@@ -4609,6 +4610,7 @@ textarea.w-input, textarea.w-select {
   .r_head.is-2 {
     padding-bottom: 2.2rem;
     inset: auto auto 20% 97%;
+    padding-left: 1rem;
   }
 
   .r_head.is-3 {
