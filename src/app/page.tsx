@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import '@fontsource/luckiest-guy';
 import Navbar from "./components/Navbar/Navbar";
 import SubscribeButton from "./components/SubscribeButton";
+import RoadMap from "./components/RoadMap";
 
 export default function Home() {
   return (
@@ -106,7 +107,6 @@ export default function Home() {
               <div className={styles.win2Col2Container}>
                 <div className={styles.question}>
                   <div className={styles.textHeader}>WHAT</div>
-                  <div className={styles.textHeader}>WHAT</div>
                   <div className={styles.textHeader}>F*CK</div>
                   <div className={styles.textHeader}>ARE</div>
                   <div className={styles.textHeader}>BBC</div>
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <RoadMap /> */}
+        <RoadMap />
         <div className={styles.mintWrapper}>
           <figure className={styles.slotWrapper}>
             <Image
