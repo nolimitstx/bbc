@@ -7,7 +7,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import styles from '../page.module.css';
-import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function SubscribeButton() {
