@@ -1,7 +1,7 @@
 import {
   ArrowCol2Row1ToCol3Row2,
   ArrowCol1Row2ToCol2Row1,
-  ArrowCol1Row4ToCol1Row2, ArrowCol2Row5ToCol1Row4, ArrowCol3Row2ToCol3Row4, ArrowCol3Row4ToCol2Row5 } from './arrows/AllArrow.tsx';
+  ArrowCol1Row4ToCol1Row2, ArrowCol2Row5ToCol1Row4, ArrowCol3Row2ToCol3Row4, ArrowCol3Row4ToCol2Row5 } from './arrows/AllArrow';
 import './roadmap.css'
 export default function RoadMap() {
   return (
