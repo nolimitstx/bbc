@@ -141,7 +141,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <RoadMap />
+        {/* <RoadMap /> */}
         <div className={styles.mintWrapper}>
           <figure className={styles.slotWrapper}>
             <Image
