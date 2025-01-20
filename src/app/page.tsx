@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import '@fontsource/luckiest-guy';
 import Navbar from "./components/Navbar/Navbar";
+import SubscribeButton from "./components/SubscribeButton";
+import RoadMap from "./components/RoadMap";
 
 export default function Home() {
   return (
@@ -50,17 +52,22 @@ export default function Home() {
                     />
                   </figure>
                 </div>
-                <div className={styles.mintSoonContainer}>
-                  <div className={styles.mintSoon}>MINT SOON</div>
-                  <figure className={styles.mintAccentContainer}>
-                    <Image
-                      width={95}
-                      height={101}
-                      alt="stars"
-                      src="/win1/MintStars.webp.png"
-                      className={styles.mintAccent}
-                    />
-                  </figure>
+                <div className={styles.subscribeContainer}>
+                  <div className={styles.mintSoonContainer}>
+                    <div className={styles.mintSoon}>MINT SOON</div>
+                    <figure className={styles.mintAccentContainer}>
+                      <Image
+                        width={95}
+                        height={101}
+                        alt="stars"
+                        src="/win1/MintStars.webp.png"
+                        className={styles.mintAccent}
+                      />
+                    </figure>
+                  </div>
+                  <div className={styles.buttonContainer}>
+                    <SubscribeButton />
+                  </div>
                 </div>
               </div>
             </div>
@@ -134,6 +141,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* <RoadMap /> */}
         <div className={styles.mintWrapper}>
           <figure className={styles.slotWrapper}>
             <Image

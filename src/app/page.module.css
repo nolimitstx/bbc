@@ -3,6 +3,27 @@
    ========================================= */
 
 /* Variables and color scheme */
+
+
+.buttonContainer {
+  margin-right: 0.75rem;
+}
+
+.subscribeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.subscribe {
+  color: 'white';
+  font-family: var(--font-luckiest-guy) !important;
+  background-color: #f47a20 !important;
+  color: #fff !important;
+  box-shadow: 8px 8px #000 !important;
+  margin-top: 1rem !important;
+}
+
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -94,7 +115,7 @@
 .titleSubContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -515,6 +536,42 @@
   .foregroundAccent {
     width: 15%;
   }
+  .buttonContainer {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  .subscribe {
+    font-size: 18px; /* Increase button font size */
+    padding: 12px 24px; /* Increase button padding */
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .mintSoon {
+    font-size: 28px;
+  }
+
+  .mintSoonContainer {
+    height: 80px;
+  }
+
+  .buttonContainer {
+    margin-right: 1.5rem;
+  }
+
+  .subscribeContainer {
+    justify-content: flex-end;
+  }
+
+  .subscribe {
+    font-size: 20px; /* Further increase button font size */
+    padding: 14px 28px; /* Further increase button padding */
+    margin-left: 1.5rem;
+  }
 }
 
 /* =========================================
@@ -558,6 +615,24 @@
   .mintSoon {
     font-size: 1.75rem;
   }
+
+  .mintSoonContainer {
+    height: 90px;
+  }
+
+  .buttonContainer {
+    margin-right: 2rem;
+  }
+
+  .subscribeContainer {
+    justify-content: flex-end;
+  }
+
+  .subscribe {
+    font-size: 22px; /* Further increase button font size */
+    padding: 16px 32px; /* Further increase button padding */
+    margin-left: 2rem;
+  }
 }
 
 /* =========================================
@@ -584,5 +659,22 @@
   .mintSoon {
     padding: 20px;
     font-size: 2.5rem;
+  }
+  .mintSoonContainer {
+    height: 100px;
+  }
+
+  .buttonContainer {
+    margin-right: 2.5rem;
+  }
+
+  .subscribeContainer {
+    justify-content: flex-end;
+  }
+
+  .subscribe {
+    font-size: 24px; /* Further increase button font size */
+    padding: 18px 36px; /* Further increase button padding */
+    margin-left: 2.5rem;
   }
 }
