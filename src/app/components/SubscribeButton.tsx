@@ -18,9 +18,7 @@ export default function SubscribeButton() {
   const [twitter, setTwitter] = useState('');
   const [instagram, setInstagram] = useState('');
 
-  const theme = useTheme();
   const matches = useMediaQuery('(min-width: 960px)'); // Adjust the breakpoint to match your CSS media query
-
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => {

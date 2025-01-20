@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import '@fontsource/luckiest-guy';
 import Navbar from "./components/Navbar/Navbar";
 import SubscribeButton from "./components/SubscribeButton";
-import RoadMap from "./components/RoadMap";
 
 export default function Home() {
   return (
