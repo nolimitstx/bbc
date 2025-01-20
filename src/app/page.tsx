@@ -107,6 +107,7 @@ export default function Home() {
               <div className={styles.win2Col2Container}>
                 <div className={styles.question}>
                   <div className={styles.textHeader}>WHAT</div>
+                  <div className={styles.textHeader}>THE</div>
                   <div className={styles.textHeader}>F*CK</div>
                   <div className={styles.textHeader}>ARE</div>
                   <div className={styles.textHeader}>BBC</div>
