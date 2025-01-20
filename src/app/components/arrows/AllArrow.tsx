@@ -1,4 +1,4 @@
-const CurvedArrowheadMarker = ({ markerId }) => (
+const CurvedArrowheadMarker = ({ markerId }: { markerId: string }) => (
   <defs>
     <marker
       id={markerId}
