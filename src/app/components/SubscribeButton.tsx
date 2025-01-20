@@ -171,7 +171,7 @@ export default function SubscribeButton() {
           <Button variant='outlined' onClick={handleClose} color="primary" sx={{ fontFamily: 'Luckiest Guy' }}>
             Cancel
           </Button>
-          <Button variant="contained" onClick={handleSubmit} color="primary" sx={{ fontFamily: 'Luckiest Guy' }}>
+          <Button variant="contained" onClick={handleSubmit} color="primary" sx={{ fontFamily: 'Luckiest Guy', color: 'white' }}>
             Subscribe
           </Button>
         </DialogActions>
