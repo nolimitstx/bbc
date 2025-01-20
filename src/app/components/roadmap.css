@@ -577,7 +577,7 @@ textarea.w-input, textarea.w-select {
   display: none !important;
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .w-container {
     max-width: 728px;
   }
@@ -645,7 +645,7 @@ textarea.w-input, textarea.w-select {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .w-hidden-main, .w-hidden-medium {
     display: inherit !important;
   }
@@ -714,7 +714,7 @@ textarea.w-input, textarea.w-select {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media (max-width: 479px) {
   .w-container {
     max-width: none;
   }
@@ -1190,7 +1190,7 @@ textarea.w-input, textarea.w-select {
   outline: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .w-nav-brand {
     padding-left: 10px;
   }
@@ -1715,7 +1715,7 @@ textarea.w-input, textarea.w-select {
   position: static;
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
   }
@@ -1725,7 +1725,7 @@ textarea.w-input, textarea.w-select {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .w-nav[data-collapse="small"] .w-nav-menu {
     display: none;
   }
@@ -1739,7 +1739,7 @@ textarea.w-input, textarea.w-select {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media (max-width: 479px) {
   .w-nav[data-collapse="tiny"] .w-nav-menu {
     display: none;
   }
@@ -1802,7 +1802,7 @@ textarea.w-input, textarea.w-select {
   display: block;
 }
 
-@media screen and (max-width: 479px) {
+@media (max-width: 479px) {
   .w-tab-link {
     display: block;
   }
@@ -2730,7 +2730,7 @@ textarea.w-input, textarea.w-select {
   display: flex;
   position: absolute;
   inset: auto 0% 0%;
-  color: black
+  color: black;
 }
 
 .r_head.is-1 {
@@ -2741,12 +2741,14 @@ textarea.w-input, textarea.w-select {
 
 .r_head.is-2 {
   padding-bottom: 4.9rem;
-  inset: 19% 23% auto auto;
+  padding-left: 3rem;
+  inset: 19% 29% auto auto;
 }
 
 .r_head.is-3 {
   padding-bottom: 4.6rem;
-  inset: 19% 23% auto auto;
+  inset: 19% 16% auto auto;
+  padding-left: 3rem;
 }
 
 .r_head.is-4 {
@@ -2760,7 +2762,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .r_head.is-6 {
-      inset: 0% auto auto -12%;
+  inset: 0% auto auto -3%;
   padding-bottom: 3.5rem;
   padding-left: 2.7rem;
 }
@@ -2782,12 +2784,12 @@ textarea.w-input, textarea.w-select {
 
 .r_number.is-3 {
   /* inset: auto 28% 77% auto; */
-  inset: auto auto 77% 86%;
+  inset: auto 84% 75% auto;
   transform: rotate(-15deg);
 }
 
 .r_number.is-4 {
-  inset: auto 13% 74% auto;
+  inset: auto auto 74% 66%;
   transform: rotate(20deg);
 }
 
@@ -2797,7 +2799,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .r_number.is-6 {
-  inset: auto auto 75% 84%;
+  inset: 10% auto 75% auto;
   transform: rotate(20deg);
 }
 
@@ -3681,7 +3683,7 @@ textarea.w-input, textarea.w-select {
   font-size: .75rem;
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .section.about {
     height: auto;
     min-height: 100vh;
@@ -3811,6 +3813,10 @@ textarea.w-input, textarea.w-select {
   .r_head.is-2 {
     padding-bottom: 2.9rem;
     inset: auto 23% 55% auto;
+  }
+
+  .r_number.is-3 {
+    inset: auto auto 77% 86%;
   }
 
   .r_head.is-3 {
@@ -3960,7 +3966,7 @@ textarea.w-input, textarea.w-select {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   h2 {
     font-size: 3rem;
   }
@@ -4436,7 +4442,7 @@ textarea.w-input, textarea.w-select {
   
 }
 
-@media screen and (max-width: 479px) {
+@media (max-width: 479px) {
   h2 {
     font-size: 2.5rem;
   }
@@ -4837,7 +4843,7 @@ textarea.w-input, textarea.w-select {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   #w-node-b4eb7a81-cd58-7fbc-0415-9f0aa3c090d5-cfd6d705 {
     order: 1;
   }
@@ -4910,4 +4916,16 @@ textarea.w-input, textarea.w-select {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+@media (min-width: 1024px) {
+  .r_head {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .r_head {
+    font-size: 1.5rem;
+  }
 }

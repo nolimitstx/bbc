@@ -1,5 +1,4 @@
 "use client"
-import { X } from '@mui/icons-material';
 import styles from '../page.module.css';
 import './roadmap.css'
 import { useRef } from 'react'
