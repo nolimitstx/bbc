@@ -4920,14 +4920,60 @@ textarea.w-input, textarea.w-select {
   font-display: swap;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .r_head {
     font-size: 1.25rem;
   }
-}
+}*/
 
 @media (min-width: 1280px) {
   .r_head {
     font-size: 1.5rem;
+  }
+  .r_head.is-2 {
+    padding-left: 5rem;
+  }
+} 
+
+@media (min-width: 1536px) {
+
+  .description {
+    font-size: 2.5rem;
+  }
+
+  .description.is-2 {
+    padding-left: 3rem;
+  } 
+
+  .description.is-3 {
+    padding-left: 4rem;
+  }
+  .description.is-4 {
+    padding-left: 1rem;
+  }
+
+  .r_head {
+    font-size: 2.5rem;
+  }
+
+  .r_head.is-2 {
+    inset: 19% -1% auto auto;
+  }
+
+  .r_head.is-3 {
+    inset: 19% -7% auto auto;
+  }
+
+  .r_head.is-4 {
+    inset: auto 46% 61% auto;
+  }
+
+  .r_head.is-5 {
+    inset: 89% auto auto 16%;
+    font-size: 2.5rem;
+  }
+
+  .r_head.is-6 {
+    inset: -5% auto auto 8%;
   }
 }

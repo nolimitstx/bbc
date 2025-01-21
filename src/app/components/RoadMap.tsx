@@ -12,6 +12,7 @@ export default function RoadMap() {
   const node5 = useRef(null);
   const node6 = useRef(null);
   const isVerticalDesign = useMediaQuery('(max-width: 767px)');
+  const isLargeDesk = useMediaQuery('(min-width: 1920px)');
   return (
     <div className="section roadmap XXsnipcss_extracted_selector_selectionXX snipcss0-0-0-1 tether-element-attached-top tether-element-attached-center tether-target-attached-top tether-target-attached-center">
       <div className="grid big snipcss0-1-1-2">
@@ -23,7 +24,7 @@ export default function RoadMap() {
 
           <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>
 
-          <div id="w-node-_11a9d9b9-499c-b6e4-f94a-ecaabf7dca3c-cfd6d705" className="r_wrapper snipcss0-3-5-9" >
+          <div id="w-node-_11a9d9b9-499c-b6e4-f94a-ecaabf7dca3c-cfd6d705" className="r_wrapper snipcss0-3-5-9" style={{ placeSelf: 'center' }}>
             <img ref={node1} src="/win4/Launch.png" loading="eager" width="471.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 24vw, (max-width: 991px) 33vw, 29vw" alt="" className="r_image snipcss0-4-9-10" />
             <div className="r_head is-1 snipcss0-4-9-11">
               <div>Get <span className="snipcss0-6-12-13"></span>a BBC NFT</div>
@@ -39,7 +40,7 @@ export default function RoadMap() {
           </div>
 
           <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>
-          <div id="w-node-_6952819a-d937-763b-18b3-19efeb4ab8f4-cfd6d706" className="r_wrapper is-4 snipcss0-3-5-22" >
+          <div id="w-node-_6952819a-d937-763b-18b3-19efeb4ab8f4-cfd6d706" className="r_wrapper is-4 snipcss0-3-5-22" style={{ placeSelf: 'center' }}>
             <img ref={node6} src="/win4/Feedback.png" loading="eager" width="471.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 24vw, (max-width: 991px) 33vw, 29vw" alt="" className="r_image snipcss0-4-22-23" />
             <div className="r_head is-6 snipcss0-4-22-24">
               <div className="snipcss0-6-12-13">Community Led Features</div>
@@ -56,11 +57,11 @@ export default function RoadMap() {
           </div>
 
           {!isVerticalDesign ? <div className={styles.textHeader} style={{
-            fontSize: '3rem',
+            // fontSize: '3rem',
             justifySelf: 'center',
             alignSelf: 'end'
           }}>Roadmap</div> : <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>}
-          <div id="w-node-e8750180-1b6d-6d05-0cc0-a3358b45499d-cfd6d705" className="r_wrapper is-2 snipcss0-3-5-32" >
+          <div id="w-node-e8750180-1b6d-6d05-0cc0-a3358b45499d-cfd6d705" className="r_wrapper is-2 snipcss0-3-5-32" style={{ placeSelf: 'center' }} >
             <img ref={node2} src="/win4/Courses.png" loading="eager" width="471.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 24vw, (max-width: 991px) 33vw, 29vw" alt="" className="r_image snipcss0-4-32-33" />
             <div className="r_head is-2 snipcss0-4-32-34">
               <div className="snipcss0-6-12-13">Crypto Education</div>
@@ -78,7 +79,7 @@ export default function RoadMap() {
           <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>
           <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>
           <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>
-          <div id="w-node-_6952819a-d937-763b-18b3-19efeb4ab8f4-cfd6d705" className="r_wrapper is-4 snipcss0-3-5-22" >
+          <div id="w-node-_6952819a-d937-763b-18b3-19efeb4ab8f4-cfd6d705" className="r_wrapper is-4 snipcss0-3-5-22" style={{ placeSelf: 'center' }}>
             <img ref={node5} src="/win4/AIIntegration.png" loading="eager" width="471.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 24vw, (max-width: 991px) 33vw, 29vw" alt="" className="r_image snipcss0-4-22-23" />
             <div className="r_head is-5 snipcss0-4-22-24">
               <div className="snipcss0-6-12-13">AI Integration</div>
@@ -95,7 +96,7 @@ export default function RoadMap() {
           </div>
 
           <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>
-          <div id="w-node-be521726-87a9-6c90-4f0a-c781994a58b5-cfd6d705" className="r_wrapper snipcss0-3-5-45" >
+          <div id="w-node-be521726-87a9-6c90-4f0a-c781994a58b5-cfd6d705" className="r_wrapper snipcss0-3-5-45" style={{ placeSelf: 'center' }}>
             <img ref={node3} src="/win4/Analytics.png" loading="eager" width="471.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 24vw, (max-width: 991px) 33vw, 29vw" alt="" className="r_image snipcss0-4-45-46" />
             <div className="r_head is-3 snipcss0-4-45-47">
               <div className="snipcss0-6-12-13">Trading Analytics</div>
@@ -112,7 +113,7 @@ export default function RoadMap() {
           </div>
           <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>
 
-          <div id="w-node-_6952819a-d937-763b-18b3-19efeb4ab8f4-cfd6d704" className="r_wrapper is-4 snipcss0-3-5-22" >
+          <div id="w-node-_6952819a-d937-763b-18b3-19efeb4ab8f4-cfd6d704" className="r_wrapper is-4 snipcss0-3-5-22" style={{ placeSelf: 'center' }} >
             <img ref={node4} src="/win4/Merch.png" loading="eager" width="471.5" sizes="(max-width: 479px) 100vw, (max-width: 767px) 24vw, (max-width: 991px) 33vw, 29vw" alt="" className="r_image snipcss0-4-22-23" />
             <div className="r_head is-4 snipcss0-4-22-24">
               <div className="snipcss0-6-12-13">Get Merch</div >
@@ -130,7 +131,7 @@ export default function RoadMap() {
           <div id="w-node-fe173a83-d7e0-d378-3847-ce94e4266a80-cfd6d705" className="r_wrapper is-empty snipcss0-3-5-31"></div>
           {isVerticalDesign
             ? <Xarrow start={node1} end={node2} color="black" strokeWidth={7} startAnchor="bottom" endAnchor="top" path="straight" />
-            : <Xarrow start={node1} end={node2} color="black" strokeWidth={9} />}
+            : <Xarrow start={node1} end={node2} startAnchor="right" endAnchor="top" strokeWidth={9} color="black" />}
           {isVerticalDesign
             && <Xarrow start={node2} end={node3} color="black" strokeWidth={7} startAnchor="bottom" endAnchor="top" path="straight" />
           }
@@ -140,7 +141,7 @@ export default function RoadMap() {
           }
           {isVerticalDesign
             ? <Xarrow start={node4} end={node5} color="black" strokeWidth={7} startAnchor="bottom" endAnchor="top" path="straight" />
-            : <Xarrow start={node4} end={node5} color="black" strokeWidth={9} />
+            : <Xarrow start={node4} end={node5} color="black" strokeWidth={9} startAnchor="left" endAnchor="bottom" />
           }
           {isVerticalDesign && <Xarrow start={node5} end={node6} color="black" strokeWidth={7} startAnchor="bottom" endAnchor="top" path="straight" />}
           {!isVerticalDesign && <Xarrow start={node6} end={node1} startAnchor="top" endAnchor="left" color="black" strokeWidth={9} />}
