@@ -12,7 +12,6 @@ export default function RoadMap() {
   const node5 = useRef(null);
   const node6 = useRef(null);
   const isVerticalDesign = useMediaQuery('(max-width: 767px)');
-  const isLargeDesk = useMediaQuery('(min-width: 1920px)');
   return (
     <div className="section roadmap XXsnipcss_extracted_selector_selectionXX snipcss0-0-0-1 tether-element-attached-top tether-element-attached-center tether-target-attached-top tether-target-attached-center">
       <div className="grid big snipcss0-1-1-2">
